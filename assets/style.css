@@ -1,10 +1,16 @@
 body {
     /* background-color: #8ED7BA; */
-    background-image: url('images/concrete-texture.png');
-    font-family: 'ELEGANT_TYPEWRITER';
+    background-image: url('images/gray.jpg');
+    /* font-family: 'ELEGANT_TYPEWRITER'; */
 }
 
+#googleFont {
+    font-family: 'Megrim', cursive;
+}
 
+.lead {
+    font-family: 'Megrim', cursive;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -18,7 +24,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: rgb(146, 243, 151);
+    background-color: #4aaaa5;
     color: white;
     padding: 10px;
     margin: 8px 0;
@@ -134,170 +140,38 @@ span.psw {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: zoomInDown;
-    background-color: #2fa5db9d;
-    color: white;
-    margin-top: 50px;
+    /* background-color: #2fa5db9d; */
+    color: rgb(233, 227, 227);
+    margin-top: -21px;
     padding: 5px;
-    padding-bottom: 15px;
-    text-align: left;
-    font-size: 18px;
-    opacity: 0.8;
-}
-/* 
-.panel-panel-danger {
-    color: rgba(234, 192, 37, 0.68);
-}
-
-#image {
+    padding-bottom: 135px;
+    padding-top: 200px;
     text-align: right;
+    font-size: 20px;
+    /* opacity: 0.8; */
+    background-image: url(images/football3.jpg);
 }
 
-.panel {
-    background-color: #3d4041;
-    color: rgba(234, 192, 37, 0.68);
+.jumbotron p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 200;
+
 }
 
-#footer {
-    background-color: #2f3233;
-    color: rgba(234, 192, 37, 0.68);
-    text-align: center;
-    padding: 10px;
-    opacity: 0.8;
-}
-
-#map {
-    height: 400px;
-    width: 100%;
-    margin-top: 25px;
-}
-
-.panel-body2 {
-    padding: 10px;
-}
-
-.panel-body3 {
-    padding: 10px;
-    color: black;
-}
-
-th {
-    padding-right: 195px;
-    color: white;
-}
-
-input {
-    line-height: normal;
-    width: 100%;
-    padding: 11px;
-    padding-left: 19px;
-    color: black;
-} */
-
-/* Full-width input fields */
-/* 
-input[type=text],
-input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: rgb(74, 163, 236);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-}
-
-.btn-warning {
-    color: #fff;
-    background-color: #f0ad4e;
-    border-color: #eea236;
-    width: 22%;
-}
-
-#userAccount {
-    margin-top: 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    width: 22%;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
+.footer {
+    clear: both;
     position: relative;
+    z-index: 10;
+    height: 4em;
+    margin-top: 4em;
+    background-color: #222;
+    text-align: center;
+    /* vertical-align: middle; */
+    color: rgb(185, 185, 185);
+    border-top-color: solid #4aaaa5;
+    border-top: 5px solid #4aaaa5;
+    /* margin-right: -190px; */
+    overflow: hidden;
+    padding: 15px
 }
-
-.container1 {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-} */
-
-/* The Modal (background) */
-
-.
-/* .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-.modal-backdrop.in {
-    filter: alpha(opacity=50);
-    opacity: -0.5;
-}
-
-#beer-info {
-    background-color: #2f3233;
-    color: rgba(234, 192, 37, 0.68)
-}
-
-#beer-close {
-    color: rgba(234, 192, 37, 0.68)
-}
-
-#beer-section {
-    max-height: 365px;
-    overflow-y: scroll;
-}
-
-#beer-section2 {
-    max-height: 300px;
-    overflow-y: scroll;
-} */
