@@ -1,15 +1,23 @@
 body {
-    /* background-color: #8ED7BA; */
-    background-image: url('images/gray.jpg');
+    background-color: rgb(65, 63, 63);
+    /* background-image: url('images/gray.jpg'); */
     /* font-family: 'ELEGANT_TYPEWRITER'; */
 }
 
 #googleFont {
     font-family: 'Megrim', cursive;
+    color: #4aaaa5;
 }
+
+/* @font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+} */
 
 .lead {
     font-family: 'Megrim', cursive;
+    color: white;
+
 }
 
 /* Full-width input fields */
@@ -141,14 +149,14 @@ span.psw {
     animation-fill-mode: both;
     animation-name: zoomInDown;
     /* background-color: #2fa5db9d; */
-    color: rgb(233, 227, 227);
+    color: white;
     margin-top: -21px;
     padding: 5px;
     padding-bottom: 135px;
     padding-top: 200px;
     text-align: right;
     font-size: 20px;
-    /* opacity: 0.8; */
+    opacity: 0.8;
     background-image: url(images/football3.jpg);
 }
 
@@ -163,7 +171,7 @@ span.psw {
     clear: both;
     position: relative;
     z-index: 10;
-    height: 4em;
+    height: [footer-height];
     margin-top: 4em;
     background-color: #222;
     text-align: center;
@@ -175,3 +183,9 @@ span.psw {
     overflow: hidden;
     padding: 15px
 }
+/* 
+.footer { 
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height] 
+} */
