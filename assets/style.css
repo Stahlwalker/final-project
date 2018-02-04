@@ -20,6 +20,16 @@ body {
 
 }
 
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    width: 75%;
+    margin-left: 10px;
+    /* padding-left: 27px; */
+    border-top: 1px solid #eee;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 50%;
