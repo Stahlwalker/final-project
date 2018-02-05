@@ -20,7 +20,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    width: 75%;
+    width: 85%;
     margin-left: 10px;
     /* padding-left: 27px; */
     border-top: 1px solid #eee;
@@ -239,7 +239,8 @@ span.psw {
 }
 
 .container2 {
-    width: 200px;
+    width: 600px;
+    text-align: right;
 }
 
 .word {
@@ -344,12 +345,12 @@ span.psw {
 		background: #333 url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/low_contrast_linen.png');
 	}
 
-	ul {
+	ul2 {
 		margin: 30px auto;
 		text-align: center;
 	}
 
-	li {
+	li2 {
 		list-style: none;
 		position: relative;
 		display: inline-block;
