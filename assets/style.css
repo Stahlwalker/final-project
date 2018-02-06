@@ -7,6 +7,7 @@ body {
     font-family: 'Megrim', cursive;
     color: #4aaaa5;
     text-align: left;
+    padding: 10px;
 }
 
 .lead {
@@ -82,6 +83,9 @@ span.psw {
     padding-top: 16px;
 }
 
+/* .rowModal {
+    padding: 10px;
+} */
 /* The Modal (background) */
 
 .modal {
@@ -476,25 +480,47 @@ a.green:hover {
     background: rgba(182, 171, 171, 0.7);
 }
 
+
 .footer {
-    clear: both;
-    position: absolute;
+    /* clear: both; */
+    position: relative;
     /* z-index: 10; */
-    height: [footer-height];
-    margin-top: 4em;
+    /* height: [footer-height]; */
+    /* margin-top: 4em; */
     background-color: #222;
     text-align: center;
     /* vertical-align: middle; */
     color: rgb(185, 185, 185);
-    border-top-color: solid #4aaaa5;
+    /* border-top-color: solid #4aaaa5; */
     border-top: 5px solid #4aaaa5;
     /* margin-right: -190px; */
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 5px;
     padding-top: 20px;
-    /* bottom: 0; */
+    bottom: 0;
     width: 100%;
 }
+
+#footer2 {
+    /* clear: both; */
+    position: fixed;
+    /* z-index: 10; */
+    /* height: [footer-height]; */
+    /* margin-top: 4em; */
+    background-color: #222;
+    text-align: center;
+    /* vertical-align: middle; */
+    color: rgb(185, 185, 185);
+    /* border-top-color: solid #4aaaa5; */
+    border-top: 5px solid #4aaaa5;
+    /* margin-right: -190px; */
+    /* overflow: hidden; */
+    padding: 5px;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
 
 /* social footer */
 
