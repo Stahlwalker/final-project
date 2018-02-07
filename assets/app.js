@@ -1,8 +1,8 @@
-// jQuery.ajaxPrefilter(function (options) {
-//     if (options.crossDomain && jQuery.support.cors) {
-//         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-//     }
-// });
+jQuery.ajaxPrefilter(function (options) {
+    if (options.crossDomain && jQuery.support.cors) {
+        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+    }
+});
 
 
 
@@ -179,9 +179,9 @@ var database = firebase.database();
 
 // api
 
- 
 
-    var queryURL = "https://www.fantasyfootballnerd.com/service/players/xml/5h9gufizmccn/";
+
+    var queryURL = "https://www.fantasyfootballnerd.com/service/players/json/5h9gufizmccn/";
     console.log(queryURL);
 
     $.ajax({
