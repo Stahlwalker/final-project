@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stahlwalker's Picks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />   
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="assets/bootswatch.css">
@@ -68,7 +68,7 @@
 
 
     <div class="container-fluid">
-        <div class="content" style="min-height: 800px;">
+        <div class="content" style="min-height: 600px;">
             <div class="jumbotron">
                 <div class="rowJumbo">
                     <h1>Pick 2, Start 'Em, Sit 'Em!</h1>
@@ -96,114 +96,139 @@
                 </ul2>
             </div>
 
-            <div class="rowModal">
+            <!-- <div class="rowModal">
                 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</button>
                 <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
 
                 <div id="id01" class="modal">
-                    <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
-                    <form class="modal-content">
-                            <br>
-                            <h1>Log In</h1>
-                            <hr>
-                            <label>
-                                <b>Email</b>
-                            </label>
-                            <br>
-                            <input type="text" id="txtEmail" placeholder="Enter Email" name="email" required>
-                            <br>
-                            <label>
-                                <b>Password</b>
-                            </label>
-                            <br>
-                            <input type="password" id="txtPassword" placeholder="Enter Password" name="psw" required>
-                            <br>
-                            <label>
-                                <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
-                            </label>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <!- <form class="modal-content">
+                        <br>
+                        <h1>Log In</h1>
+                        <hr>
+                        <label>
+                            <b>Email</b>
+                        </label>
+                        <br>
+                        <input type="text" id="txtEmail" placeholder="Enter Email" name="email" required>
+                        <br>
+                        <label>
+                            <b>Password</b>
+                        </label>
+                        <br>
+                        <input type="password" id="txtPassword" placeholder="Enter Password" name="psw" required>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
+                        </label>
 
-                            <p>By creating an account you agree to our
-                                <a href="#" style="color: #4aaaa5">Terms & Privacy</a>.</p>
+                        <p>By creating an account you agree to our
+                            <a href="#" style="color: #4aaaa5">Terms & Privacy</a>.</p>
 
-                            <div class="clearfix">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                <button type="submit" id="btnLogin">Log In</button>
-                            </div>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" id="btnLogin">Log In</button>
                         </div>
-                    </form>
                 </div>
+                </form>
+            </div> -->
 
-                <div id="id02" class="modal">
-                    <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
-                    <form class="modal-content">
-                        <div class="container">
-                            <h1>Sign Up</h1>
-                            <p>Please fill in this form to create an account.</p>
-                            <hr>
-                            <label>
-                                <b>Email</b>
-                            </label>
-                            <br>
-                            <input type="text" id="txtEmail" placeholder="Enter Email" name="email" required>
-                            <br>
-                            <label>
-                                <b>Password</b>
-                            </label>
-                            <br>
-                            <input type="password" id="txtPassword" placeholder="Enter Password" name="psw" required>
-                            <br>
-                            <label>
-                                <b>Repeat Password</b>
-                            </label>
-                            <br>
-                            <input type="password" id="txtPassword2" placeholder="Repeat Password" name="psw-repeat" required>
-                            <br>
-                            <label>
-                                <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
-                            </label>
+            <!-- <div id="id02" class="modal"> -->
+                <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+                <!-- <form class="modal-content">
+                    <div class="container">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+                        <label>
+                            <b>Email</b>
+                        </label>
+                        <br>
+                        <input type="text" id="txtEmail" placeholder="Enter Email" name="email" required>
+                        <br>
+                        <label>
+                            <b>Password</b>
+                        </label>
+                        <br>
+                        <input type="password" id="txtPassword" placeholder="Enter Password" name="psw" required>
+                        <br>
+                        <label>
+                            <b>Repeat Password</b>
+                        </label>
+                        <br>
+                        <input type="password" id="txtPassword2" placeholder="Repeat Password" name="psw-repeat" required>
+                        <br>
+                        <label>
+                            <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
+                        </label>
 
-                            <p>By creating an account you agree to our
-                                <a href="#" style="color: #4aaaa5">Terms & Privacy</a>.</p>
+                        <p>By creating an account you agree to our
+                            <a href="#" style="color: #4aaaa5">Terms & Privacy</a>.</p>
 
-                            <div class="clearfix">
-                                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-                                <button type="submit" id="btnSignUp">Sign Up</button>
-                            </div>
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" id="btnSignUp">Sign Up</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
+        </div> --> 
 
-            <div class="row">
-                <div id="wordsAnimate">
-                    <div class="word w1">Pick 2</div>
-                    <div class="word w2">Start 'Em</div>
-                    <div class="word w3">Sit 'Em</div>
-                </div>
+        <div class="rowAnimate">
+            <div id="wordsAnimate">
+                <div class="word w1">Pick 2</div>
+                <div class="word w2">Start 'Em</div>
+                <div class="word w3">Sit 'Em</div>
             </div>
+        </div>
 
+
+        <div class="panel panel-warning" id="userSection">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <strong>
+                        </i> Create User Account</strong>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <input id="txtEmail" type="email" placeholder="Email">
+                <input id="txtPassword" type="password" placeholder="Password">
+                <button id="btnLogin" class="btn btn-action">
+                    Log in
+                </button>
+                <button id="btnSignUp" class="btn btn-secondary">
+                    Sign Up
+                </button>
+                <button id="btnLogout" class="btn btn-action hide">
+                    Log out
+                </button>
+            </div>
         </div>
-        <div class="footer">
-            <a href="https://www.facebook.com/lucas.stahl.75">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com/LucasStahl11">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/lucasstahl">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="https://lucasstahl.wordpress.com/">
-                <i class="fa fa-wordpress"></i>
-            </a>
-            <p id="copyRight">@Copyright 2018 www.Stahlwalker.com</p>
-        </div>
+    </div>
+
+
+    </div>
+    <div class="footer">
+        <a href="https://www.facebook.com/lucas.stahl.75">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/LucasStahl11">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lucasstahl">
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://lucasstahl.wordpress.com/">
+            <i class="fa fa-wordpress"></i>
+        </a>
+        <p id="copyRight">@Copyright 2018 www.Stahlwalker.com</p>
+    </div>
 
 
     </div>
 
 
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>

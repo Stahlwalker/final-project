@@ -6,24 +6,74 @@ jQuery.ajaxPrefilter(function (options) {
 
 
 
-   // Initialize Firebase
-   var config = {
+// Initialize Firebase
+var config = {
     apiKey: "AIzaSyABch8e624hO8-eyPXzM6yiyWoONt_GNLc",
     authDomain: "fantasyfootball-6cbb7.firebaseapp.com",
     databaseURL: "https://fantasyfootball-6cbb7.firebaseio.com",
     projectId: "fantasyfootball-6cbb7",
     storageBucket: "fantasyfootball-6cbb7.appspot.com",
     messagingSenderId: "952687201149"
-  };
-  firebase.initializeApp(config);
+};
+firebase.initializeApp(config);
 
-var uid;
+// var uid;
+
+// const txtEmail = document.getElementById('txtEmail');
+// const txtPassword = document.getElementById('txtPassword');
+// const txtPassword2 = document.getElementById('txtPassword2');
+// const btnLogin = document.getElementById('btnLogin');
+// const btnSignUp = document.getElementById('btnSignUp');
+// const btnLogout = document.getElementById('btnLogout');
+// btnLogin.addEventListener('click', e => {
+//     const email = txtEmail.value;
+//     const pass = txtPassword.value;
+//     const auth = firebase.auth();
+//     const promise = auth.signInWithEmailAndPassword(email, pass);
+//     promise.catch(e => console.log(e.message));
+// });
+// btnSignUp.addEventListener('click', e => {
+//     const email = txtEmail.value;
+//     const pass = txtPassword.value;
+//     const pass2 = txtPassword2.value;
+//     const auth = firebase.auth();
+//     const promise = auth.createUserWithEmailAndPassword(email, pass, pass2);
+//     promise.catch(e => console.log(e.message));
+// });
+// btnLogout.addEventListener('click', e => {
+//     // var uid = "";
+//     firebase.auth().signOut();
+// });
+
+// firebase.auth().onAuthStateChanged(firebaseUser => {
+//     if (firebaseUser) {
+//         console.log(firebaseUser);
+//         btnLogout.classList.remove('hide');
+//     } else {
+//         console.log('not logged in');
+//         btnLogout.classList.add('hide');
+//     }
+// });
+
+// $("#btnLogin").on("click", function (event) {
+//     $("#txtEmail").val("");
+//     $("#txtPassword").val("");
+// });
+// $("#btnSignUp").on("click", function (event) {
+//     $("#txtEmail").val("");
+//     $("#txtPassword").val("");
+//     $("#txtPassword2").val("");
+// });
+// Create a variable to reference the database.
+// var database = firebase.database();
+// Whenever a user clicks the click `
+
 
 const txtEmail = document.getElementById('txtEmail');
 const txtPassword = document.getElementById('txtPassword');
-const txtPassword2 = document.getElementById('txtPassword2');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
+const btnLogout = document.getElementById('btnLogout');
 btnLogin.addEventListener('click', e => {
     const email = txtEmail.value;
     const pass = txtPassword.value;
@@ -34,28 +84,37 @@ btnLogin.addEventListener('click', e => {
 btnSignUp.addEventListener('click', e => {
     const email = txtEmail.value;
     const pass = txtPassword.value;
-    const pass2 = txtPassword2.value;
     const auth = firebase.auth();
-    const promise = auth.createUserWithEmailAndPassword(email, pass, pass2);
+    const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
 });
-// btnLogout.addEventListener('click', e => {
-//     var uid = "";
-//     firebase.auth().signOut();
+btnLogout.addEventListener('click', e => {
+    firebase.auth().signOut();
+});
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if (firebaseUser) {
+        console.log(firebaseUser);
+        btnLogout.classList.remove('hide');
+    } else {
+        console.log('not logged in');
+        btnLogout.classList.add('hide');
+    }
+});
+// $("#btnLogin").on("click", function (event) {
+//     $("#txtEmail").val("");
+//     $("#txtPassword").val("");
 // });
-
-$("#btnLogin").on("click", function (event) {
-    $("#txtEmail").val("");
-    $("#txtPassword").val("");
-});
-$("#btnSignUp").on("click", function (event) {
-    $("#txtEmail").val("");
-    $("#txtPassword").val("");
-    // $("#txtPassword2").val("");
-});
+// $("#btnSignUp").on("click", function (event) {
+//     $("#txtEmail").val("");
+//     $("#txtPassword").val("");
+// });
 // Create a variable to reference the database.
+
+
 var database = firebase.database();
-// Whenever a user clicks the click `
+
+
+
 
 // firebase.auth().onAuthStateChanged(firebaseUser => {
 //     if (firebaseUser) {
@@ -130,36 +189,36 @@ var database = firebase.database();
 
 
 
-    // // Get the modal
-    // var modal = document.getElementById('id01');
-          
-    // // When the user clicks anywhere outside of the modal, close it
-    // window.onclick = function(event) {
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
-    //     }
-    // }
+// // Get the modal
+// var modal = document.getElementById('id01');
 
-    // var modal = document.getElementById('id02');
-          
-    // // When the user clicks anywhere outside of the modal, close it
-    // window.onclick = function(event) {
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
-    //     }
-    // }
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
+// var modal = document.getElementById('id02');
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
 
 
-    //  // Get the modal
-    //  var modal = document.getElementById('signUp1');
-          
-    //  // When the user clicks anywhere outside of the modal, close it
-    //  window.onclick = function(event) {
-    //      if (event.target == modal) {
-    //          modal.style.display = "none";
-    //      }
-    //  }
- 
+//  // Get the modal
+//  var modal = document.getElementById('signUp1');
+
+//  // When the user clicks anywhere outside of the modal, close it
+//  window.onclick = function(event) {
+//      if (event.target == modal) {
+//          modal.style.display = "none";
+//      }
+//  }
+
 
 // typed.js
 // var typed = new Typed('.type', {
@@ -173,26 +232,39 @@ var database = firebase.database();
 //       loop : true,
 //       showCursor : false,
 //       backSpeed : 60
-      
+
 //   });
 
 
-// api
+// This .on("click") function will trigger the AJAX Call
+$("#find-player").on("click", function (event) {
 
+    // Preventing the submit button from trying to submit the form
+    // We're optionally using a form so the user may hit Enter to search instead of clicking the button
+    event.preventDefault();
 
+    // Here we grab the text from the input box
+    var player = $("#player-input").val();
+
+    // api
+
+    // var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+
+    // var queryURL = "https://www.fantasyfootballnerd.com/service/" + player + "players/json/5h9gufizmccn/";
+    // var queryURL = "https://www.fantasyfootballnerd.com/service/?t=" + player + "&players/json/5h9gufizmccn/";
 
     var queryURL = "https://www.fantasyfootballnerd.com/service/players/json/5h9gufizmccn/";
-    console.log(queryURL);
 
     $.ajax({
-      url: queryURL,
-      method: 'GET'
+        url: queryURL,
+        method: 'GET'
     }).done(function (response) {
-
-
-     
-    console.log(response);
+        $("#player-view").text(JSON.stringify(response));
+        console.log(queryURL);
+        console.log(response);
     });
+
+});
 
 
 //   all players

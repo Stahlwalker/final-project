@@ -67,7 +67,26 @@
 
     <div class="container-fluid">
         <div class="content" style="min-height: 800px;">
-            blah blah content
+            
+                <div class="player">
+                        <h1>Player Search</h1>
+                    
+                        <!-- We'll be dumping our JSON contents in here -->
+                        <div id="player-view"></div>
+                    
+                        <!-- This form will be where users input data about the movies -->
+                        <form id="player-form">
+                          <label for="player-input">Search for a player</label>
+                          <input type="text" id="player-input"><br>
+                    
+                          <!-- This button will trigger our AJAX call -->
+                          <input id="find-player" type="submit" value="Player Search">
+                        </form>
+                </div>
+
+
+
+
         </div>
 
         <div class="footer">

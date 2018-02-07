@@ -210,8 +210,22 @@ span.psw {
 #wordsAnimate {
     padding-bottom: 20px;
     padding-left: 40px;
+    margin-bottom: 20px;
 }
 
+.player {
+    color: white;
+}
+
+.rowAnimate {
+    padding-bottom: 20px;
+}
+#userSection {
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 50%;
+}
 
 #copyRight {
     font-family: 'Megrim', cursive;
