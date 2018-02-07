@@ -171,3 +171,26 @@ var typed = new Typed('.type', {
       backSpeed : 60
       
   });
+
+
+// api
+
+ 
+
+    var queryURL = "https://www.fantasyfootballnerd.com/service/players/xml/5h9gufizmccn/";
+    console.log(queryURL);
+
+    $.ajax({
+      url: queryURL,
+      method: 'GET'
+    }).done(function (response) {
+
+
+     
+    console.log(response);
+    });
+
+
+//   all players
+
+//   https://www.fantasyfootballnerd.com/service/players/xml/5h9gufizmccn/
