@@ -491,7 +491,6 @@ a.green:hover {
     text-align: center;
     /* vertical-align: middle; */
     color: rgb(185, 185, 185);
-    /* border-top-color: solid #4aaaa5; */
     border-top: 5px solid #4aaaa5;
     /* margin-right: -190px; */
     /* overflow: hidden; */
@@ -501,25 +500,7 @@ a.green:hover {
     width: 100%;
 }
 
-#footer2 {
-    /* clear: both; */
-    position: fixed;
-    /* z-index: 10; */
-    /* height: [footer-height]; */
-    /* margin-top: 4em; */
-    background-color: #222;
-    text-align: center;
-    /* vertical-align: middle; */
-    color: rgb(185, 185, 185);
-    /* border-top-color: solid #4aaaa5; */
-    border-top: 5px solid #4aaaa5;
-    /* margin-right: -190px; */
-    /* overflow: hidden; */
-    padding: 5px;
-    padding-top: 20px;
-    bottom: 0;
-    width: 100%;
-}
+
 
 
 /* social footer */
