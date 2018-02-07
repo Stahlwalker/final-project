@@ -19,7 +19,7 @@ var uid;
 
 const txtEmail = document.getElementById('txtEmail');
 const txtPassword = document.getElementById('txtPassword');
-const txtPassword = document.getElementById('txtPassword2');
+const txtPassword2 = document.getElementById('txtPassword2');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
 btnLogin.addEventListener('click', e => {
