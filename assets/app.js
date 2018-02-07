@@ -1,16 +1,18 @@
-jQuery.ajaxPrefilter(function (options) {
-    if (options.crossDomain && jQuery.support.cors) {
-        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-    }
-});
+// jQuery.ajaxPrefilter(function (options) {
+//     if (options.crossDomain && jQuery.support.cors) {
+//         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+//     }
+// });
 
-// Initialize Firebase
-var config = {
+
+
+   // Initialize Firebase
+   var config = {
     apiKey: "AIzaSyABch8e624hO8-eyPXzM6yiyWoONt_GNLc",
     authDomain: "fantasyfootball-6cbb7.firebaseapp.com",
     databaseURL: "https://fantasyfootball-6cbb7.firebaseio.com",
     projectId: "fantasyfootball-6cbb7",
-    storageBucket: "",
+    storageBucket: "fantasyfootball-6cbb7.appspot.com",
     messagingSenderId: "952687201149"
   };
   firebase.initializeApp(config);
@@ -32,14 +34,15 @@ btnLogin.addEventListener('click', e => {
 btnSignUp.addEventListener('click', e => {
     const email = txtEmail.value;
     const pass = txtPassword.value;
+    const pass2 = txtPassword2.value;
     const auth = firebase.auth();
-    const promise = auth.createUserWithEmailAndPassword(email, pass);
+    const promise = auth.createUserWithEmailAndPassword(email, pass, pass2);
     promise.catch(e => console.log(e.message));
 });
-btnLogout.addEventListener('click', e => {
-    var uid = "";
-    firebase.auth().signOut();
-});
+// btnLogout.addEventListener('click', e => {
+//     var uid = "";
+//     firebase.auth().signOut();
+// });
 
 $("#btnLogin").on("click", function (event) {
     $("#txtEmail").val("");
@@ -48,129 +51,130 @@ $("#btnLogin").on("click", function (event) {
 $("#btnSignUp").on("click", function (event) {
     $("#txtEmail").val("");
     $("#txtPassword").val("");
+    // $("#txtPassword2").val("");
 });
 // Create a variable to reference the database.
 var database = firebase.database();
 // Whenever a user clicks the click `
 
-firebase.auth().onAuthStateChanged(firebaseUser => {
-    if (firebaseUser) {
-        console.log(firebaseUser.uid);
-        console.log(firebaseUser);
-        uid = firebaseUser.uid;
-        btnLogout.classList.remove('hide');
-        database.ref('users/' + uid).off("child_added");
+// firebase.auth().onAuthStateChanged(firebaseUser => {
+//     if (firebaseUser) {
+//         console.log(firebaseUser.uid);
+//         console.log(firebaseUser);
+//         uid = firebaseUser.uid;
+//         btnLogout.classList.remove('hide');
+//         database.ref('users/' + uid).off("child_added");
 
-        $("#beer-table2 > tbody").empty();
-        database.ref('users/' + uid).on("child_added", function (childSnapshot) {
-
-
-            $("#beer-table2 > tbody").append("<tr><td>" + childSnapshot.val().beerName + "</td><td>" +
-                childSnapshot.val().location + "</td><td>" + childSnapshot.val().thoughts + "</td></tr>");
-
-        });
-
-    } else {
-        console.log('not logged in');
-        uid = "";
-        database.ref('public/' + uid).off("child_added");
-        $("#beer-table2 > tbody").empty();
-
-        database.ref('public/').on("child_added", function (childSnapshot) {
-            // Log everything that's coming out of snapshot
-            console.log(childSnapshot.val());
-
-            $("#beer-table2 > tbody").append("<tr><td>" + childSnapshot.val().beerName + "</td><td>" +
-                childSnapshot.val().location + "</td><td>" + childSnapshot.val().thoughts + "</td></tr>");
-        }, function (errorObject) {});
-        $("#add-beer").on("click", function (event) {
-            $("#beer-name").val("");
-            $("#location").val("");
-            $("#your-thoughts").val("");
-        });
-        btnLogout.classList.add('hide');
-    }
-});
-
-$("#add-beer").on("click", function (event) {
-    event.preventDefault();
-    // Get the input values
-    var beerName = $("#beer-name").val().trim();
-    var location = $("#location").val().trim();
-    var thoughts = $("#your-thoughts").val().trim();
-
-    if (uid !== "") {
-        database.ref('users/' + uid).push({
-            beerName: beerName,
-            location: location,
-            thoughts: thoughts,
-        });
-    } else if (uid === "") {
-        database.ref('public/' + uid).push({
-            beerName: beerName,
-            location: location,
-            thoughts: thoughts,
-        });
-
-    }
-});
+//         $("#beer-table2 > tbody").empty();
+//         database.ref('users/' + uid).on("child_added", function (childSnapshot) {
 
 
-$("#add-beer").on("click", function (event) {
-    $("#beer-name").val("");
-    $("#location").val("");
-    $("#your-thoughts").val("");
-});
+//             $("#beer-table2 > tbody").append("<tr><td>" + childSnapshot.val().beerName + "</td><td>" +
+//                 childSnapshot.val().location + "</td><td>" + childSnapshot.val().thoughts + "</td></tr>");
+
+//         });
+
+//     } else {
+//         console.log('not logged in');
+//         uid = "";
+//         database.ref('public/' + uid).off("child_added");
+//         $("#beer-table2 > tbody").empty();
+
+//         database.ref('public/').on("child_added", function (childSnapshot) {
+//             // Log everything that's coming out of snapshot
+//             console.log(childSnapshot.val());
+
+//             $("#beer-table2 > tbody").append("<tr><td>" + childSnapshot.val().beerName + "</td><td>" +
+//                 childSnapshot.val().location + "</td><td>" + childSnapshot.val().thoughts + "</td></tr>");
+//         }, function (errorObject) {});
+//         $("#add-beer").on("click", function (event) {
+//             $("#beer-name").val("");
+//             $("#location").val("");
+//             $("#your-thoughts").val("");
+//         });
+//         btnLogout.classList.add('hide');
+//     }
+// });
+
+// $("#add-beer").on("click", function (event) {
+//     event.preventDefault();
+//     // Get the input values
+//     var beerName = $("#beer-name").val().trim();
+//     var location = $("#location").val().trim();
+//     var thoughts = $("#your-thoughts").val().trim();
+
+//     if (uid !== "") {
+//         database.ref('users/' + uid).push({
+//             beerName: beerName,
+//             location: location,
+//             thoughts: thoughts,
+//         });
+//     } else if (uid === "") {
+//         database.ref('public/' + uid).push({
+//             beerName: beerName,
+//             location: location,
+//             thoughts: thoughts,
+//         });
+
+//     }
+// });
 
 
+// $("#add-beer").on("click", function (event) {
+//     $("#beer-name").val("");
+//     $("#location").val("");
+//     $("#your-thoughts").val("");
+// });
 
 
 
-    // Get the modal
-    var modal = document.getElementById('id01');
+
+
+    // // Get the modal
+    // var modal = document.getElementById('id01');
           
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    // // When the user clicks anywhere outside of the modal, close it
+    // window.onclick = function(event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
 
-    var modal = document.getElementById('id02');
+    // var modal = document.getElementById('id02');
           
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    // // When the user clicks anywhere outside of the modal, close it
+    // window.onclick = function(event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
 
 
-     // Get the modal
-     var modal = document.getElementById('signUp1');
+    //  // Get the modal
+    //  var modal = document.getElementById('signUp1');
           
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event) {
-         if (event.target == modal) {
-             modal.style.display = "none";
-         }
-     }
+    //  // When the user clicks anywhere outside of the modal, close it
+    //  window.onclick = function(event) {
+    //      if (event.target == modal) {
+    //          modal.style.display = "none";
+    //      }
+    //  }
  
 
 // typed.js
-var typed = new Typed('.type', {
-    strings: ["Pick 2",
-      "Sit em",
-      "Start em",
-      "Compare em"],
-    typeSpeed : 75,
-      backDelay : 1500,
-      smartBackspace : false,
-      loop : true,
-      showCursor : false,
-      backSpeed : 60
+// var typed = new Typed('.type', {
+//     strings: ["Pick 2",
+//       "Sit em",
+//       "Start em",
+//       "Compare em"],
+//     typeSpeed : 75,
+//       backDelay : 1500,
+//       smartBackspace : false,
+//       loop : true,
+//       showCursor : false,
+//       backSpeed : 60
       
-  });
+//   });
 
 
 // api

@@ -6,15 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stahlwalker's Picks</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />   
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="assets/bootswatch.css">
@@ -109,22 +102,21 @@
 
                 <div id="id01" class="modal">
                     <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
-                    <form class="modal-content" action="/action_page.php">
-                        <div class="container">
-                            <h1>Sign Up</h1>
-                            <p>Please fill in this form to create an account.</p>
+                    <form class="modal-content">
+                            <br>
+                            <h1>Log In</h1>
                             <hr>
                             <label>
                                 <b>Email</b>
                             </label>
                             <br>
-                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <input type="text" id="txtEmail" placeholder="Enter Email" name="email" required>
                             <br>
                             <label>
                                 <b>Password</b>
                             </label>
                             <br>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <input type="password" id="txtPassword" placeholder="Enter Password" name="psw" required>
                             <br>
                             <label>
                                 <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
@@ -135,7 +127,7 @@
 
                             <div class="clearfix">
                                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                <button type="submit" class="signupbtn">Sign Up</button>
+                                <button type="submit" id="btnLogin">Log In</button>
                             </div>
                         </div>
                     </form>
@@ -164,7 +156,7 @@
                                 <b>Repeat Password</b>
                             </label>
                             <br>
-                            <input type="password" id="textPassword2" placeholder="Repeat Password" name="psw-repeat" required>
+                            <input type="password" id="txtPassword2" placeholder="Repeat Password" name="psw-repeat" required>
                             <br>
                             <label>
                                 <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
@@ -175,7 +167,7 @@
 
                             <div class="clearfix">
                                 <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-                                <button type="submit" id="btnSignUp" class="signupbtn">Sign Up</button>
+                                <button type="submit" id="btnSignUp">Sign Up</button>
                             </div>
                         </div>
                     </form>
@@ -210,6 +202,10 @@
 
     </div>
 
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
 
     </script>
