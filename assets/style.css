@@ -220,11 +220,33 @@ span.psw {
 .rowAnimate {
     padding-bottom: 20px;
 }
+
+.panel-userHeading {
+    background-color:rgb(156, 150, 150);
+    padding: 5px;
+    font-family: 'Megrim', cursive;
+}
+
+input {
+    /* line-height: normal; */
+    padding: 12px;
+}
+
 #userSection {
     padding-bottom: 50px;
     margin-bottom: 60px;
-    text-align: center;
-    width: 50%;
+    /* text-align: center; */
+    /* width: 50%; */
+    background-color: #333;
+    color: white;
+    border: grey;
+    border: 5px solid #4aaaa5;
+    font-family: 'Megrim', cursive;
+}
+
+#userButtons {
+    font-family: 'Megrim', cursive;
+    color: white;
 }
 
 #copyRight {
