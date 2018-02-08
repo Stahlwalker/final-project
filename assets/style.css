@@ -3,6 +3,17 @@ body {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+/* .img {
+    background-image: url(assets/images/football2.jpg); 
+  }
+  @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+    .img {
+      background-image: url(assets/images/football2.jpg); 
+    }
+  } */
+
 #googleFont {
     font-family: 'Megrim', cursive;
     color: #4aaaa5;
@@ -195,7 +206,7 @@ span.psw {
     padding-top: 200px;
     text-align: right;
     opacity: 0.8;
-    background-image: url(images/football3.jpg);
+    background-image: url(images/football4.jpg);
 }
 
 .rowJumbo {
