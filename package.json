@@ -1,0 +1,24 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "fantasy football",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stahlwalker/final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stahlwalker/final-project/issues"
+  },
+  "homepage": "https://github.com/Stahlwalker/final-project#readme",
+  "dependencies": {
+    "fantasy-football-nerd": "^1.0.0",
+    "install": "^0.10.4",
+    "npm": "^5.6.0"
+  }
+}

@@ -6,6 +6,9 @@ jQuery.ajaxPrefilter(function (options) {
 
 
 
+
+
+
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyABch8e624hO8-eyPXzM6yiyWoONt_GNLc",
@@ -270,3 +273,10 @@ $("#find-player").on("click", function (event) {
 //   all players
 
 //   https://www.fantasyfootballnerd.com/service/players/xml/5h9gufizmccn/
+
+var FFNerd = require('fantasy-football-nerd');
+var ff = new FFNerd({ api_key: "https://www.fantasyfootballnerd.com/service/players/json/5h9gufizmccn/" });
+ 
+ff.teams(function(teams){
+    console.log('Got teams');
+});
