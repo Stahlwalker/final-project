@@ -1,8 +1,8 @@
-jQuery.ajaxPrefilter(function (options) {
-    if (options.crossDomain && jQuery.support.cors) {
-        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-    }
-});
+// jQuery.ajaxPrefilter(function (options) {
+//     if (options.crossDomain && jQuery.support.cors) {
+//         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+//     }
+// });
 
 // Initialize Firebase
 var config = {
@@ -47,36 +47,14 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     }
 });
 
-
 var database = firebase.database();
 
-// This .on("click") function will trigger the AJAX Call
-$("#find-player").on("click", function (event) {
-
-    // Preventing the submit button from trying to submit the form
-    // We're optionally using a form so the user may hit Enter to search instead of clicking the button
-    event.preventDefault();
-
-    // Here we grab the text from the input box
-    var player = $("#player-input").val();
-
-    var queryURL = "https://www.fantasyfootballnerd.com/service/players/json/5h9gufizmccn/";
-
-    $.ajax({
-        url: queryURL,
-        method: 'GET'
-    }).done(function (response) {
-        $("#player-view").text(JSON.stringify(response));
-        console.log(queryURL);
-        console.log(response);
-    });
-
-});
 
 
-var FFNerd = require('fantasy-football-nerd');
-var ff = new FFNerd({ api_key: "https://www.fantasyfootballnerd.com/service/players/json/5h9gufizmccn/" });
+// need to load jquery node through express to get this to work
+// var FFNerd = require('fantasy-football-nerd');
+// var ff = new FFNerd({ api_key: "https://www.fantasyfootballnerd.com/service/players/json/5h9gufizmccn/" });
  
-ff.teams(function(teams){
-    console.log('Got teams');
-});
+// ff.teams(function(teams){
+//     console.log('Got teams');
+// });
