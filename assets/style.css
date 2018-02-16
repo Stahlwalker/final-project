@@ -22,7 +22,8 @@ body {
 
 #googleFont {
     font-family: 'Megrim', cursive;
-    color: #4aaaa5;
+    /* color: #4aaaa5; */
+    color: #49b5de;
     text-align: left;
     padding: 10px;
 }
@@ -64,7 +65,7 @@ input[type=password] {
 } */
 
 button {
-    background-color: #4aaaa5;
+    background-color: #49b5de;
     color: white;
     padding: 10px;
     margin: 8px 0;
@@ -271,7 +272,7 @@ input {
     background-color: #333;
     color: white;
     border: grey;
-    border: 5px solid #4aaaa5;
+    border: 5px solid #49b5de;
     font-family: 'Megrim', cursive;
 }
 
@@ -307,7 +308,7 @@ input {
     /* position:absolute; */
     top: 40%;
     left: 40%;
-    color: #4aaaa5;
+    color: #49b5de;
     font-family: 'Megrim', cursive;
 }
 
@@ -511,14 +512,14 @@ a.red:hover {
 }
 
 a.green {
-    background-color: #4aaaa5;
+    background-color: #49b5de;
     color: black;
     font-family: 'Megrim', cursive;
     border-color: rgb(122, 120, 120);
 }
 
 a.green:hover {
-    color: #4aaaa5;
+    color: #49b5de;
 }
 
 .round span.round {
@@ -544,7 +545,7 @@ a.green:hover {
 }
 
 .green span {
-    background: rgba(0, 63, 71, .7);
+    background:#49b5de;
 }
 
 .red span {
@@ -562,7 +563,7 @@ a.green:hover {
     text-align: center;
     /* vertical-align: middle; */
     color: rgb(185, 185, 185);
-    border-top: 5px solid #4aaaa5;
+    border-top: 5px solid #49b5de;
     /* margin-right: -190px; */
     overflow: hidden;
     /* padding: 5px; */

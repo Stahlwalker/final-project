@@ -21,9 +21,10 @@ $("#find-player").on("click", function (event) {
         url: queryURL,
         method: 'GET'
     }).done(function (response) {
-        $("#player-view").text(JSON.stringify(response));
+        // $("#player-view").text(JSON.stringify(response));
+        $("#player-view").text(JSON.stringify(response.Players[0].displayName));
         console.log(queryURL);
-        console.log(response);
+        console.log(response.Players[0].displayName);
     });
 
 });
