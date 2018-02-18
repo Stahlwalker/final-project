@@ -37,11 +37,11 @@ p {
     /* background-repeat: no-repeat; */
     height: 200px;
     /* width: 300px; */
-    position: relative;
+    /* position: relative; */
     border-radius: 25px;
     /* align: middle; */
     /* padding-bottom: 600px; */
-    vertical-align: middle;
+    /* vertical-align: middle; */
     
 }
 
@@ -61,6 +61,15 @@ p {
 }
 
 /* Add a card effect for articles */
+
+.cardAbout {
+    margin-bottom: 115px;
+    background-color: #9d9d9d;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px 50px 30px;
+    width: 75%
+}
 
 .card {
     background-color: #9d9d9d;
