@@ -66,31 +66,120 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="content" style="min-height: 800px;">           
-            blah blah content
+        <div class="content" style="min-height: 800px;">
+
+            <div class="container">
+                <form action="action_page.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="emailAddress" placeholder="Enter your email...">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="usa" font=>USA</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+
+            <style>
+                /* Style inputs with type="text", select elements and textareas */
+
+                input[type=text],
+                select,
+                textarea {
+                    width: 100%;
+                    /* Full width */
+                    padding: 12px;
+                    /* Some padding */
+                    border: 1px solid #ccc;
+                    /* Gray border */
+                    border-radius: 4px;
+                    /* Rounded borders */
+                    box-sizing: border-box;
+                    /* Make sure that padding and width stays in place */
+                    margin-top: 6px;
+                    /* Add a top margin */
+                    margin-bottom: 16px;
+                    /* Bottom margin */
+                    resize: vertical;
+                    /* Allow the user to vertically resize the textarea (not horizontally) */
+                    font-family: 'Megrim', cursive;
+                }
+
+
+                label {
+                    display: inline-block;
+                    max-width: 100%;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    font-family: 'Megrim', cursive;
+
+                }
+
+                /* Style the submit button with a specific background color etc */
+
+                input[type=submit] {
+                    background-color: #49b5de;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-family: 'Megrim', cursive;
+                }
+
+                /* When moving the mouse over the submit button, add a darker green color */
+
+                input[type=submit]:hover {
+                    background-color: #49b5de;
+                }
+
+                /* Add a background color and some padding around the form */
+
+                .container {
+                    border-radius: 5px;
+                    background-color: #f2f2f2;
+                    padding: 20px;
+                }
+            </style>
+
         </div>
 
         <footer class="footer">
-                <div class="container-fluid">
-                        <a href="https://www.facebook.com/lucas.stahl.75">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com/LucasStahl11">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/lucasstahl">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                        <a href="https://lucasstahl.wordpress.com/">
-                            <i class="fa fa-wordpress"></i>
-                        </a>
-                    <p id="copyRight">@Copyright 2018 www.Stahlwalker.com</p>
-                </div>
+            <div class="container-fluid">
+                <a href="https://www.facebook.com/lucas.stahl.75">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/LucasStahl11">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lucasstahl">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://lucasstahl.wordpress.com/">
+                    <i class="fa fa-wordpress"></i>
+                </a>
+                <p id="copyRight">@Copyright 2018 www.Stahlwalker.com</p>
+            </div>
         </footer>
 
     </div>
 
-    
+
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
