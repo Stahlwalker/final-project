@@ -87,4 +87,6 @@ $("#submit").on("click", function(event) {
         $("#subject").val("");
 
     });
+
+    // Firebase not working???
     
