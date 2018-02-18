@@ -1,7 +1,9 @@
 /* Create two unequal columns that floats next to each other */
+
 /* Left column */
 
-h2, h5 {
+h2,
+h5 {
     font-family: 'Megrim', cursive;
 }
 
@@ -9,51 +11,84 @@ p {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-.leftcolumn { 
+.leftcolumn {
     float: left;
     width: 75%;
-  }
-  
-  /* Right column */
-  .rightcolumn {
+}
+
+/* Right column */
+
+.rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .img {
-    /* background-color: #49b5de; */
+}
+
+.img {
     width: 100%;
     padding: 20px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+#imageAbout {
+    background-image: url(images/luke.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 200px;
+    /* width: 300px; */
+    position: relative;
+    border-radius: 25px;
+    /* align: middle; */
+    /* padding-bottom: 600px; */
+    vertical-align: middle;
+    
+}
+
+#image1 {
     background-image: url(images/football3.jpg);
     background-size: cover;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
+}
+
+#image2 {
+    background-image: url(images/football.jpg);
+    background-size: cover;
+}
+
+#image3 {
+    background-image: url(images/football2.jpg);
+    background-size: cover;
+}
+
+/* Add a card effect for articles */
+
+.card {
     background-color: #9d9d9d;
     padding: 20px;
     margin-top: 20px;
-  }
+    border-radius: 15px 50px 30px;
+}
 
-  .cardBottom {
+.cardBottom {
     background-color: rgb(179, 174, 174);
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 130px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+    border-radius: 15px 50px 30px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  @media (max-width: 800px) {
-    .leftcolumn, .rightcolumn { 
-      width: 100%;
-      padding: 0;
+@media (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
     }
-  }
+}
