@@ -9,6 +9,11 @@ body {
     
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    font-family: 'Megrim', cursive;
+}
+
 /* .img {
     background-image: url(assets/images/football2.jpg); 
   }
