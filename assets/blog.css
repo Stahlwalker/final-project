@@ -24,6 +24,19 @@ p {
     padding-left: 20px;
 }
 
+/* img {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: cover;
+} */
+
+.responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 .img {
     width: 100%;
     padding: 20px;
@@ -31,19 +44,20 @@ p {
     background-size: cover;
 }
 
-#imageAbout {
-    background-image: url(images/luke.jpg);
-    background-size: cover;
+/* #imageAbout {
+    background-image: url(images/luke.jpg); */
+    /* background-size: cover;
     /* background-repeat: no-repeat; */
-    height: 200px;
+    /* height: 200px; */
     /* width: 300px; */
     /* position: relative; */
-    border-radius: 25px;
+    /* border-radius: 15px 50px 30px;  */
     /* align: middle; */
     /* padding-bottom: 600px; */
     /* vertical-align: middle; */
-    
-}
+    /* width: 100%;
+    height: auto;
+} */
 
 #image1 {
     background-image: url(images/football3.jpg);
