@@ -93,11 +93,18 @@ p {
 }
 
 .cardBottom {
-    background-color: rgb(179, 174, 174);
+    background-color: #9d9d9d;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 130px;
     border-radius: 15px 50px 30px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #49b5de;
+    border-color: #49b5de;
+    font-family: 'Megrim', cursive;
 }
 
 /* Clear floats after the columns */
