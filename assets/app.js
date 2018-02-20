@@ -47,9 +47,24 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     }
 });
 
+var user = firebase.auth().currentUser;
+
+user.sendEmailVerification().then(function() {
+  // Email sent.
+  console.log("email sent");
+}).catch(function(error) {
+  // An error happened.
+});
+
+firebase.auth().languageCode = 'fr';
+
 var database = firebase.database();
 
 
+
+
+// To apply the default browser preference instead of explicitly setting it.
+// firebase.auth().useDeviceLanguage();
 
 // need to load jquery node through express to get this to work
 // var FFNerd = require('fantasy-football-nerd');

@@ -12,7 +12,8 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 // Button for adding Trains
-$("#submit").on("click", function(event) {
+$("#submit1").on("click", function(event) {
+    console.log("submit")
 
     event.preventDefault();
     // Get inputs
@@ -69,7 +70,7 @@ $("#submit").on("click", function(event) {
         console.log(firstName);
         console.log(lastName);
         console.log(email);
-        console.log(sountry);
+        console.log(country);
         console.log(subject);
     
         // Append train info to table on page
