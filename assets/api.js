@@ -22,9 +22,23 @@ $("#find-player").on("click", function (event) {
         method: 'GET'
     }).done(function (response) {
         // $("#player-view").text(JSON.stringify(response));
-        $("#player-view").text(JSON.stringify(response.Players[0].displayName));
+        $("#player-displayName").text(JSON.stringify(response.Players[0].displayName));
+        $("#player-team").text(JSON.stringify(response.Players[0].team));
+        $("#player-position").text(JSON.stringify(response.Players[0].position));
         console.log(queryURL);
-        console.log(response.Players[0].displayName);
+        // console.log(response.Players[0].position);
     });
 
 });
+
+// $.ajax({
+//     url: queryURL,
+//     method: 'GET'
+// }).done(function (response) {
+//     // $("#player-view").text(JSON.stringify(response));
+//     $("#player-view").text(JSON.stringify(response.Players[0].displayName));
+//     console.log(queryURL);
+//     console.log(response.Players[0].displayName);
+// });
+
+// });
