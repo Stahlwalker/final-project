@@ -13,9 +13,11 @@ $("#find-player").on("click", function (event) {
     event.preventDefault();
 
     // Here we grab the text from the input box
-    var player = $("#player-input").val();
+    var players = $("#player-input").val();
 
     var queryURL = "https://www.fantasyfootballnerd.com/service/players/json/5h9gufizmccn/";
+
+    // var queryURL = "https://www.fantasyfootballnerd.com/service" + players + "/json/5h9gufizmccn/";
 
     $.ajax({
         url: queryURL,
