@@ -280,6 +280,7 @@ input {
     padding-bottom: 5px;
     margin-bottom: 130px;
     margin-top: 20px;
+    float: right;
     text-align: left;
     /* width: 50%; */
     background-color: #333;
