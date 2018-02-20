@@ -47,16 +47,16 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     }
 });
 
-var user = firebase.auth().currentUser;
+// var user = firebase.auth().currentUser;
 
-user.sendEmailVerification().then(function() {
-  // Email sent.
-  console.log("email sent");
-}).catch(function(error) {
-  // An error happened.
-});
+// user.sendEmailVerification().then(function() {
+//   // Email sent.
+//   console.log("email sent");
+// }).catch(function(error) {
+//   // An error happened.
+// });
 
-firebase.auth().languageCode = 'fr';
+// firebase.auth().languageCode = 'fr';
 
 var database = firebase.database();
 
@@ -74,18 +74,20 @@ var database = firebase.database();
 //     console.log('Got teams');
 // });
 
-$('div#login1').click(function(){
-    if ( $("#panel2").is(":hidden") ) { 
-      $("#panel2").show(); 
-    } else if ( $("#panel2").is(":visible") ) { 
-      $("#panel2").hide(); 
+
+
+  $('div#login1').click(function(){
+    if ( $("#userSection").is(":hidden") ) { 
+      $("#userSection").show(); 
+    } else if ( $("#userSection").is(":visible") ) { 
+      $("#userSection").hide(); 
     }
   })
   
   $('div#signUp2').click(function(){
-    if ( $("#panel2").is(":hidden") ) { 
-      $("#panel2").show(); 
-    } else if ( $("#panel2").is(":visible") ) { 
-      $("#panel2").hide(); 
+    if ( $("#userSection").is(":hidden") ) { 
+      $("#userSection").show(); 
+    } else if ( $("#userSection").is(":visible") ) { 
+      $("#userSection").hide(); 
     }
   })
