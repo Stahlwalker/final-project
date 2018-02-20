@@ -73,3 +73,19 @@ var database = firebase.database();
 // ff.teams(function(teams){
 //     console.log('Got teams');
 // });
+
+$('div#login1').click(function(){
+    if ( $("#panel2").is(":hidden") ) { 
+      $("#panel2").show(); 
+    } else if ( $("#panel2").is(":visible") ) { 
+      $("#panel2").hide(); 
+    }
+  })
+  
+  $('div#signUp2').click(function(){
+    if ( $("#panel2").is(":hidden") ) { 
+      $("#panel2").show(); 
+    } else if ( $("#panel2").is(":visible") ) { 
+      $("#panel2").hide(); 
+    }
+  })
