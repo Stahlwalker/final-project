@@ -105,7 +105,8 @@ $('div#login1').on("click", function(){
   }
 })
 
-$('div#signUp2').on("click", function(){
+
+$('div#signUp1').on("click", function(){
   if ( $("#id02").is(":visible") ) { 
     $("#id02").hide();
   } else if ( $("#id02").is(":hidden") ) { 
