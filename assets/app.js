@@ -63,6 +63,16 @@ firebase.auth().onAuthStateChanged(function (firebaseUser) {
     }
 });
 
+$("#btnLogin").on("click", function (event) {
+    $("#txtEmail").val("");
+    $("#txtPassword").val("");
+});
+
+$("#btnSignUp").on("click", function (event) {
+    $("#txtEmail").val("");
+    $("#txtPassword").val("");
+});
+
 
 // need to load jquery node through express to get this to work
 // var FFNerd = require('fantasy-football-nerd');
@@ -77,7 +87,7 @@ firebase.auth().onAuthStateChanged(function (firebaseUser) {
     $("#id01").hide();
 });
 
-$('#login1').on("click", function(){
+$('#login2').on("click", function(){
   if ( $("#id01").is(":visible") ) { 
     $("#id01").hide();
   } else if ( $("#id01").is(":hidden") ) { 
@@ -99,7 +109,7 @@ $( document ).ready(function() {
     // $("#id02").hide();
 });
 
-$('#signUp1').on("click", function(){
+$('#signUp2').on("click", function(){
   if ( $("#id02").is(":visible") ) { 
     $("#id02").hide();
   } else if ( $("#id02").is(":hidden") ) { 
