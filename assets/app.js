@@ -76,18 +76,39 @@ var database = firebase.database();
 
 
 
-  $('div#login1').click(function(){
-    if ( $("#userSection").is(":hidden") ) { 
-      $("#userSection").show(); 
-    } else if ( $("#userSection").is(":visible") ) { 
-      $("#userSection").hide(); 
-    }
-  })
+  // $('div#login1').click(function(){
+  //   if ( $("#userSection").is(":hidden") ) { 
+  //     $("#userSection").show(); 
+  //   } else if ( $("#userSection").is(":visible") ) { 
+  //     $("#userSection").hide(); 
+  //   }
+  // })
   
-  $('div#signUp2').click(function(){
-    if ( $("#userSection").is(":hidden") ) { 
-      $("#userSection").show(); 
-    } else if ( $("#userSection").is(":visible") ) { 
-      $("#userSection").hide(); 
-    }
-  })
+  // $('div#signUp2').click(function(){
+  //   if ( $("#userSection").is(":hidden") ) { 
+  //     $("#userSection").show(); 
+  //   } else if ( $("#userSection").is(":visible") ) { 
+  //     $("#userSection").hide(); 
+  //   }
+  // })
+
+
+  $( document ).ready(function() {
+    $("#userSection").hide();
+});
+
+$('div#login1').on("click", function(){
+  if ( $("#userSection").is(":visible") ) { 
+    $("#userSection").hide();
+  } else if ( $("#userSection").is(":hidden") ) { 
+    $("#userSection").show(); 
+  }
+})
+
+$('div#signUp2').on("click", function(){
+  if ( $("#userSection").is(":visible") ) { 
+    $("#userSection").hide();
+  } else if ( $("#userSection").is(":hidden") ) { 
+    $("#userSection").show(); 
+  }
+})
