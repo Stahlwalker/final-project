@@ -49,19 +49,21 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 
 var database = firebase.database();
 
-firebase.auth().onAuthStateChanged(function (firebaseUser) {
-    if (firebaseUser) {
-      firebaseUser.sendEmailVerification().then(function() {
-        // Email sent.
-      }, function(error) {
-        // An error happened.
-      })
+//authentication working but it sends out on ever reload need to fix for just sign up
+
+// firebase.auth().onAuthStateChanged(function (firebaseUser) {
+//     if (firebaseUser) {
+//       firebaseUser.sendEmailVerification().then(function() {
+//         // Email sent.
+//       }, function(error) {
+//         // An error happened.
+//       })
         
 
-    } else {
+//     } else {
         
-    }
-});
+//     }
+// });
 
 $("#btnLogin").on("click", function (event) {
     $("#txtEmail").val("");
