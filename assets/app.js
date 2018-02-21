@@ -47,6 +47,11 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
     }
 });
 
+
+
+var database = firebase.database();
+
+
 // var user = firebase.auth().currentUser;
 
 // user.sendEmailVerification().then(function() {
@@ -58,11 +63,6 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 
 // firebase.auth().languageCode = 'fr';
 
-var database = firebase.database();
-
-
-
-
 // To apply the default browser preference instead of explicitly setting it.
 // firebase.auth().useDeviceLanguage();
 
@@ -73,24 +73,6 @@ var database = firebase.database();
 // ff.teams(function(teams){
 //     console.log('Got teams');
 // });
-
-
-
-  // $('div#login1').click(function(){
-  //   if ( $("#userSection").is(":hidden") ) { 
-  //     $("#userSection").show(); 
-  //   } else if ( $("#userSection").is(":visible") ) { 
-  //     $("#userSection").hide(); 
-  //   }
-  // })
-  
-  // $('div#signUp2').click(function(){
-  //   if ( $("#userSection").is(":hidden") ) { 
-  //     $("#userSection").show(); 
-  //   } else if ( $("#userSection").is(":visible") ) { 
-  //     $("#userSection").hide(); 
-  //   }
-  // })
 
 
   $( document ).ready(function() {
