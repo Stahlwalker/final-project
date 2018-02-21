@@ -269,11 +269,12 @@ span.psw {
 input {
     /* line-height: normal; */
     padding: 12px;
-    padding-right: 149px;
+    width: 50%;
 }
 
 #txtEmail {
     padding-left: 12px;
+    width: 50%;
 }
 
 #userSection {
@@ -400,7 +401,7 @@ input {
 
 .rowBigButtons {
    text-align: center;
-   margin-bottom: 200px;
+   margin-bottom: 75px;
    margin-top: 50px;
 }
 /* buttons */

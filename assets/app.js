@@ -94,21 +94,21 @@ var database = firebase.database();
 
 
   $( document ).ready(function() {
-    $("#userSection").hide();
+    $("#id01").hide();
 });
 
 $('div#login1').on("click", function(){
-  if ( $("#userSection").is(":visible") ) { 
-    $("#userSection").hide();
-  } else if ( $("#userSection").is(":hidden") ) { 
-    $("#userSection").show(); 
+  if ( $("#id01").is(":visible") ) { 
+    $("#id01").hide();
+  } else if ( $("#id01").is(":hidden") ) { 
+    $("#id01").show(); 
   }
 })
 
 $('div#signUp2').on("click", function(){
-  if ( $("#userSection").is(":visible") ) { 
-    $("#userSection").hide();
-  } else if ( $("#userSection").is(":hidden") ) { 
-    $("#userSection").show(); 
+  if ( $("#id02").is(":visible") ) { 
+    $("#id02").hide();
+  } else if ( $("#id02").is(":hidden") ) { 
+    $("#id02").show(); 
   }
 })
