@@ -97,19 +97,32 @@ var database = firebase.database();
     $("#id01").hide();
 });
 
-$('div#login1').on("click", function(){
+$('#login1').on("click", function(){
   if ( $("#id01").is(":visible") ) { 
     $("#id01").hide();
   } else if ( $("#id01").is(":hidden") ) { 
     $("#id01").show(); 
   }
-})
+});
 
 
-$('div#signUp1').on("click", function(){
+// $('#signUp1').on("click", function(){
+//   if ( $("#id02").is(":visible") ) { 
+//     $("#id02").hide();
+//   } else if ( $("#id02").is(":hidden") ) { 
+//     $("#id02").show(); 
+//   }
+// })
+
+$( document ).ready(function() {
+    $("#id02").hide();
+    // $("#id02").hide();
+});
+
+$('#signUp1').on("click", function(){
   if ( $("#id02").is(":visible") ) { 
     $("#id02").hide();
   } else if ( $("#id02").is(":hidden") ) { 
     $("#id02").show(); 
   }
-})
+});
