@@ -1,3 +1,5 @@
+/* whole page */
+
 html {
     min-height: 100%;
     position: relative;
@@ -6,38 +8,45 @@ html {
 body {
     background-color: #333;
     font-family: 'Gloria Hallelujah', cursive;
-    
 }
 
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #9d9d9d;
-    font-family: 'Megrim', cursive;
+input {
+    /* line-height: normal; */
+    padding: 12px;
+    width: 50%;
 }
 
-/* .img {
-    background-image: url(assets/images/football2.jpg); 
-  }
-  @media 
-    (-webkit-min-device-pixel-ratio: 2), 
-    (min-resolution: 192dpi) { 
-    .img {
-      background-image: url(assets/images/football2.jpg); 
-    }
-  } */
-
-#googleFont {
-    font-family: 'Megrim', cursive;
-    /* color: #4aaaa5; */
-    color: #49b5de;
-    text-align: left;
-    padding: 10px;
-}
-
-.lead {
-    font-family: 'Gloria Hallelujah', cursive;
+button {
+    background-color: #49b5de;
     color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
 }
+
+#panel2 {
+    display: block;
+    width: 50%;
+    height: 100px;
+    background-color: black;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+hr {
+    width: 100%;
+}
+
+/* hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+} */
 
 /* hr {
     margin-top: 20px;
@@ -45,9 +54,9 @@ body {
     border: 0;
     width: 85%;
     margin-left: 10px;
-    /* padding-left: 27px; */
-    /* border-top: 1px solid #eee;
-} */ 
+    padding-left: 27px; 
+     border-top: 1px solid #eee;
+}  */
 
 /* Full-width input fields */
 
@@ -61,6 +70,7 @@ input[type=password] {
     box-sizing: border-box; 
 }
     */
+
 /* 
 .panel-title {
     margin-top: 0;
@@ -70,59 +80,16 @@ input[type=password] {
     text-align: left;
 } */
 
-#panel2 {
-    display: block;
-    width: 50%;
-    height: 100px;
-    background-color: black;
-  }
 
-button {
-    background-color: #49b5de;
-    color: white;
-    padding: 10px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 25%;
-}
 
-button:hover {
-    opacity: 0.8;
-}
 
-/* Extra styles for the cancel button */
 
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
+/* Modals */
 
-/* Center the image and position the close button */
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-.rowModal {
-    text-align: center;
+.panel-userHeading {
+    background-color: rgb(156, 150, 150);
+    padding: 5px;
+    font-family: 'Megrim', cursive;
 }
 
 /* The Modal (background) */
@@ -160,22 +127,37 @@ span.psw {
     /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button (x) */
-
-/* .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
 }
 
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-} */
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.rowModal {
+    text-align: center;
+}
 
 /* Add Zoom Animation */
 
@@ -214,6 +196,8 @@ span.psw {
     }
 }
 
+/* jumbotron */
+
 .jumbotron {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -234,48 +218,36 @@ span.psw {
     font-family: 'Megrim', cursive;
 }
 
+#googleFont {
+    font-family: 'Megrim', cursive;
+    /* color: #4aaaa5; */
+    color: #49b5de;
+    text-align: left;
+    padding: 10px;
+}
+
 .jumbotron p {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: 200;
 }
 
-
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
 }
 
-#wordsAnimate {
-    padding-bottom: 20px;
-    padding-left: 40px;
-    margin-bottom: 20px;
-}
-
-.player {
-    color: white;
-}
-
-.rowAnimate {
-    padding-bottom: 60px;
-}
-
-.panel-userHeading {
-    background-color:rgb(156, 150, 150);
-    padding: 5px;
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
     font-family: 'Megrim', cursive;
 }
 
-input {
-    /* line-height: normal; */
-    padding: 12px;
-    width: 50%;
+.lead {
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
 }
 
-#txtEmail {
-    padding-left: 12px;
-    width: 50%;
-}
+/* Firebase User Login Div */
 
 #userSection {
     padding-bottom: 5px;
@@ -296,9 +268,25 @@ input {
     color: white;
 }
 
-#copyRight {
-    font-family: 'Megrim', cursive;
-    margin-top: 10px;
+#txtEmail {
+    padding-left: 12px;
+    width: 50%;
+}
+
+/* Compare Page & Animated Words */
+
+#wordsAnimate {
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.rowAnimate {
+    padding-bottom: 60px;
+}
+
+.player {
+    color: white;
 }
 
 @font-face {
@@ -375,36 +363,13 @@ input {
     }
 }
 
-@keyframes w4anim {
-    60% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    80% {
-        opacity: 0;
-    }
-}
-
-@keyframes w5anim {
-    80% {
-        opacity: 0;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
+/* Login In Sign Up Buttons Below */
 
 .rowBigButtons {
-   text-align: center;
-   margin-bottom: 75px;
-   margin-top: 50px;
+    text-align: center;
+    margin-bottom: 75px;
+    margin-top: 50px;
 }
-/* buttons */
 
 * {
     margin: 0;
@@ -562,13 +527,14 @@ a.green:hover {
 }
 
 .green span {
-    background:#49b5de;
+    background: #49b5de;
 }
 
 .red span {
     background: rgba(182, 171, 171, 0.7);
 }
 
+/* Footer below */
 
 .footer {
     /* clear: both; */
@@ -587,11 +553,13 @@ a.green:hover {
     padding-top: 20px;
     bottom: 0;
     width: 100%;
-    height: 100px; 
+    height: 100px;
 }
 
-
-
+#copyRight {
+    font-family: 'Megrim', cursive;
+    margin-top: 10px;
+}
 
 /* social footer */
 
@@ -610,22 +578,3 @@ a.green:hover {
 .footer a:hover {
     color: white;
 }
-
-
-/* .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #f5f5f5;
-} */
-
-
-/* .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    /* height: 60px;
-    background-color: #f5f5f5;
-  } */ 

@@ -1,8 +1,3 @@
-// jQuery.ajaxPrefilter(function (options) {
-//     if (options.crossDomain && jQuery.support.cors) {
-//         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-//     }
-// });
 
 // Initialize Firebase
 var config = {
@@ -96,15 +91,6 @@ $('#login2').on("click", function(){
     $("#id01").show(); 
   }
 });
-
-
-// $('#signUp1').on("click", function(){
-//   if ( $("#id02").is(":visible") ) { 
-//     $("#id02").hide();
-//   } else if ( $("#id02").is(":hidden") ) { 
-//     $("#id02").show(); 
-//   }
-// })
 
 $( document ).ready(function() {
     $("#id02").hide();
