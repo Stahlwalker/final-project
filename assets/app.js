@@ -47,7 +47,9 @@ firebase.initializeApp(config);
 
 const txtEmail = document.getElementById('txtEmail3');
 const txtPassword = document.getElementById('txtPassword3');
-const txtPasswordRepeat = document.getElementById('txtPassword4');
+const txtEmail2 = document.getElementById('txtEmail5');
+const txtPassword2 = document.getElementById('txtPassword5');
+// const txtPasswordRepeat = document.getElementById('txtPassword4');
 const btnLogin = document.getElementById('btnLogin2');
 const btnSignUp = document.getElementById('btnSignUp2');
 const btnLogout = document.getElementById('btnLogout');
@@ -59,8 +61,8 @@ btnLogin2.addEventListener('click', e => {
     promise.catch(e => console.log(e.message));
 });
 btnSignUp2.addEventListener('click', e => {
-    const email = txtEmail.value;
-    const pass = txtPassword.value;
+    const email = txtEmail2.value;
+    const pass = txtPassword2.value;
     const auth = firebase.auth();
     const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
@@ -113,9 +115,9 @@ $("#btnLogin2").on("click", function (event) {
 });
 
 $("#btnSignUp2").on("click", function (event) {
-    $("#txtEmail3").val("");
-    $("#txtPassword3").val("");
-    $("#txtPassword4").val("");
+    $("#txtEmail5").val("");
+    $("#txtPassword5").val("");
+    // $("#txtPassword4").val("");
     $("#id02").hide();
 });
 
