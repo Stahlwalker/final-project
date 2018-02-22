@@ -38,25 +38,14 @@ button:hover {
 }
 
 hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
     width: 100%;
+    border-top: 1px solid #49b5de;
 }
 
-/* hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
-} */
 
-/* hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    width: 85%;
-    margin-left: 10px;
-    padding-left: 27px; 
-     border-top: 1px solid #eee;
-}  */
 
 /* Full-width input fields */
 
@@ -123,7 +112,7 @@ input[type=password] {
     margin: 5% auto 15% auto;
     /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
     /* Could be more or less, depending on screen size */
 }
 
@@ -281,6 +270,11 @@ span.psw {
     background-image: url(images/brain.jpg);
     margin-top: -20px;
     background-size: cover;
+    /* width: 100%;
+    height: auto; */
+    /* max-width: 100%;  */
+/* display:block; 
+height: auto; */
 }
 
 #wordsAnimate {
@@ -295,6 +289,33 @@ span.psw {
 
 .player {
     color: white;
+    font-family: 'Megrim', cursive;
+}
+
+#player-form {
+    color: white;
+    font-family: 'Megrim', cursive;
+}
+
+#player-input {
+    background-color: white;
+    width: 45%;
+    color: #49b5de;
+}
+
+#find-player {
+    color: white;
+    width: 45%;
+}
+
+#player-displayName, #player-team, #player-position {
+    color: white;
+    font-family: 'Megrim', cursive;
+}
+
+label {
+    color: white;
+    font-family: 'Megrim', cursive;
 }
 
 @font-face {
