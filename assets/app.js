@@ -10,19 +10,55 @@ var config = {
 };
 firebase.initializeApp(config);
 
-const txtEmail = document.getElementById('txtEmail');
-const txtPassword = document.getElementById('txtPassword');
-const btnLogin = document.getElementById('btnLogin');
-const btnSignUp = document.getElementById('btnSignUp');
+// const txtEmail = document.getElementById('txtEmail');
+// const txtPassword = document.getElementById('txtPassword');
+// const btnLogin = document.getElementById('btnLogin');
+// const btnSignUp = document.getElementById('btnSignUp');
+// const btnLogout = document.getElementById('btnLogout');
+// btnLogin.addEventListener('click', e => {
+//     const email = txtEmail.value;
+//     const pass = txtPassword.value;
+//     const auth = firebase.auth();
+//     const promise = auth.signInWithEmailAndPassword(email, pass);
+//     promise.catch(e => console.log(e.message));
+// });
+// btnSignUp.addEventListener('click', e => {
+//     const email = txtEmail.value;
+//     const pass = txtPassword.value;
+//     const auth = firebase.auth();
+//     const promise = auth.createUserWithEmailAndPassword(email, pass);
+//     promise.catch(e => console.log(e.message));
+// });
+// btnLogout.addEventListener('click', e => {
+//     firebase.auth().signOut();
+// });
+// firebase.auth().onAuthStateChanged(firebaseUser => {
+//     if (firebaseUser) {
+//         console.log(firebaseUser);
+//         btnLogout.classList.remove('hide');
+//     } else {
+//         console.log('not logged in');
+//         btnLogout.classList.add('hide');
+//     }
+// });
+
+// var database = firebase.database();
+
+
+const txtEmail = document.getElementById('txtEmail3');
+const txtPassword = document.getElementById('txtPassword3');
+const txtPasswordRepeat = document.getElementById('txtPassword4');
+const btnLogin = document.getElementById('btnLogin2');
+const btnSignUp = document.getElementById('btnSignUp2');
 const btnLogout = document.getElementById('btnLogout');
-btnLogin.addEventListener('click', e => {
+btnLogin2.addEventListener('click', e => {
     const email = txtEmail.value;
     const pass = txtPassword.value;
     const auth = firebase.auth();
     const promise = auth.signInWithEmailAndPassword(email, pass);
     promise.catch(e => console.log(e.message));
 });
-btnSignUp.addEventListener('click', e => {
+btnSignUp2.addEventListener('click', e => {
     const email = txtEmail.value;
     const pass = txtPassword.value;
     const auth = firebase.auth();
@@ -60,16 +96,26 @@ var database = firebase.database();
 //     }
 // });
 
-$("#btnLogin").on("click", function (event) {
-    $("#txtEmail").val("");
-    $("#txtPassword").val("");
+// $("#btnLogin").on("click", function (event) {
+//     $("#txtEmail").val("");
+//     $("#txtPassword").val("");
+// });
+
+// $("#btnSignUp").on("click", function (event) {
+//     $("#txtEmail").val("");
+//     $("#txtPassword").val("");
+// });
+
+$("#btnLogin2").on("click", function (event) {
+    $("#txtEmail3").val("");
+    $("#txtPassword3").val("");
 });
 
-$("#btnSignUp").on("click", function (event) {
-    $("#txtEmail").val("");
-    $("#txtPassword").val("");
+$("#btnSignUp2").on("click", function (event) {
+    $("#txtEmail3").val("");
+    $("#txtPassword3").val("");
+    $("#txtPassword4").val("");
 });
-
 
 // need to load jquery node through express to get this to work
 // var FFNerd = require('fantasy-football-nerd');

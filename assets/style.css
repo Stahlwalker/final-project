@@ -16,6 +16,16 @@ input {
     width: 50%;
 }
 
+#btnLogout {
+    background-color: #49b5de;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
 button {
     background-color: #49b5de;
     color: white;
@@ -396,7 +406,7 @@ label {
 
 .rowBigButtons {
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 200px;
     margin-top: 50px;
 }
 
