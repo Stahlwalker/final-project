@@ -24,6 +24,7 @@ input {
     border: none;
     cursor: pointer;
     width: 100%;
+    font-family: 'Megrim', cursive;
 }
 
 button {
