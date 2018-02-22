@@ -196,6 +196,8 @@ span.psw {
     }
 }
 
+
+
 /* jumbotron */
 
 .jumbotron {
@@ -274,6 +276,12 @@ span.psw {
 }
 
 /* Compare Page & Animated Words */
+
+.contentCompare {
+    background-image: url(images/brain.jpg);
+    margin-top: -20px;
+    background-size: cover;
+}
 
 #wordsAnimate {
     padding-bottom: 20px;
