@@ -109,12 +109,14 @@ var database = firebase.database();
 $("#btnLogin2").on("click", function (event) {
     $("#txtEmail3").val("");
     $("#txtPassword3").val("");
+    $("#id01").hide(); 
 });
 
 $("#btnSignUp2").on("click", function (event) {
     $("#txtEmail3").val("");
     $("#txtPassword3").val("");
     $("#txtPassword4").val("");
+    $("#id02").hide();
 });
 
 // need to load jquery node through express to get this to work
